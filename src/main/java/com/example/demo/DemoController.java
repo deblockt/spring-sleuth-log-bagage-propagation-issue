@@ -38,7 +38,7 @@ public class DemoController {
     @Transactional
     @GetMapping("/transactional")
     public Mono<Void> empty() {
-        customerOrderIdBaggage.updateValue(tracing.tracer().currentSpan().context(), "test");
+        customerOrderIdBaggage.updateValue(tracing.tracer().currentSpan().context(), "external_id_value");
         logger.info("Before Mono.defer on the transactional controller");
 
         return Mono.defer(() -> {
