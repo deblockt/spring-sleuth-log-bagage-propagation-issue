@@ -1,0 +1,16 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: mysecretpassword
+  sleuth:
+    sampler:
+      probability: 1.0
+    baggage:
+      local-fields:
+        - external_id
+      correlation-fields:
+        - external_id
+
+environment: local
+

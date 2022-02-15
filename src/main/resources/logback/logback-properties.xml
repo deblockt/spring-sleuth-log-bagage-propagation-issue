@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<included>
+    <springProperty name="env" source="environment"/>
+    <property name="project_tangram" value="tempo" />
+    <property name="stream" value="oap" />
+    <property name="feature" value="payment-scheduler" />
+</included>

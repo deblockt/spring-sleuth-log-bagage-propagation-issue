@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+        <pattern>external_id=%X{external_id}+  ${CONSOLE_LOG_PATTERN}</pattern>
+        <charset>utf8</charset>
+    </encoder>
+</appender>
