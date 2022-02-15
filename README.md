@@ -1,6 +1,7 @@
 # Reproduction project for spring sleuth issue
 
 This project is to reproduction baggage propagation issue using spring sleuth with spring-boot 2.6.3.
+see https://github.com/spring-cloud/spring-cloud-sleuth/issues/2115
 
 ## dependencies
 
